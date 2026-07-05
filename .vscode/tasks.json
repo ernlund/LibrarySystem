@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build LibrarySystem",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "main.cpp",
+                "Book.cpp",
+                "Library.cpp",
+                "-o",
+                "app"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
