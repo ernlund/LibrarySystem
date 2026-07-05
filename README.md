@@ -17,13 +17,13 @@ Multi-file C++ project structure
 
 <b>Project structure</b>
 LibrarySystem/
-├── main.cpp
-├── Book.cpp
-├── Book.h
-├── Library.cpp
-├── Library.h
-│
-└── README.md
+- main.cpp
+- Book.cpp
+- Book.h
+- Library.cpp
+- Library.h
+  
+-  README.md
 
 <b>How to Run</b>
 
