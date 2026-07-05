@@ -4,6 +4,8 @@
 
 int main() {
     Library lib;
+    lib.loadFromFile("books.txt"); // LOAD
+
     int choice;
 
     while (true) {
@@ -17,7 +19,7 @@ int main() {
         if (choice == 1) {
             std::string title, author;
 
-            std::cin.ignore(); // fjerner newline fra input buffer
+            std::cin.ignore();
 
             std::cout << "Enter title: ";
             std::getline(std::cin, title);
@@ -26,18 +28,14 @@ int main() {
             std::getline(std::cin, author);
 
             lib.addBook(Book(title, author));
-
-            std::cout << "Book added!\n";
         }
         else if (choice == 2) {
             lib.listBooks();
         }
         else if (choice == 3) {
-            std::cout << "Goodbye!\n";
+            lib.saveToFile("books.txt"); // SAVE
+            std::cout << "Saved & goodbye!\n";
             break;
-        }
-        else {
-            std::cout << "Invalid choice!\n";
         }
     }
 
