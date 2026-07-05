@@ -56,4 +56,10 @@ Search books
 Delete books
 Improve UI / menu system
 
-Created while learning C++ and software development fundamentals.
+<b> What could be improved?</b>
+ . structure of files: src and include folders 
+ . persistent library (txt/json)
+ . pointers / references
+ . better design 
+ 
+ Created while learning C++ and software development fundamentals.
